@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/css/style-dashboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+          <div class="col-lg-8 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">DASHBOARD</h4>
+                  <p class="card-description"><a href="./dashboard/create">Create New User
+                  </a></p>
+                  <div class="table-responsive">
+                  <table class="table">
+    <thead>
+      <tr>
+      <th>No.</th>
+      <th>ID</th>
+     <th>Username</th>
+     <th>Email</th>
+     <th>Password</th>
+     <th>Detail</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>   
+      <% let i = 1 %> 
+          <tr><% dataUsers.forEach((user) => { %>
+          <td><%= i %> </td>
+          <td><%=user.id  %> </td>
+          <td><%=user.username  %> </td>
+          <td><%=user.email %> </td>
+          <td><%=user.password  %> </td>
+          <td><label class="badge badge-info"><a href="/dashboard/detail/<%= user.id %> ">Detail</a></label></td>
+          <td><label class="badge badge-warning"><a href="/dashboard/update/<%= user.id %> ">Update</a></label></td>
+          <td><label class="badge badge-danger"><a href="/dashboard/delete/<%= user.id %> ">Delete</a></label></td>  
+          <% i++ %>
+          </tr>
+          <% }) %>
+    
+    </tbody>
+  </table>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">  
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">  
+</script>
+
+</body>
+</html>

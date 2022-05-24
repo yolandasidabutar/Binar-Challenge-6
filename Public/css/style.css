@@ -1,0 +1,395 @@
+style.css
+
+
+body {
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+    
+}
+
+/* page 1 */
+
+.page1{
+    width:100vw; 
+    height:100vh;background-image: url('../img/main-bg.jpg'); background-size:100vw 100vh; background-position: center; background-repeat: no-repeat; background-attachment: local; margin: 0px;padding: 0px;"
+ }
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vw 0vh;
+    color: white;
+}
+
+nav .logo{
+    letter-spacing: 4px;
+    font-family:'open sans';
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav2{
+    float: right;
+    justify-content: space-around;
+    width: 20%;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+     /* float: left; */
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.play {
+    font-family: Arial;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding: 25vh;
+    letter-spacing: 3px;
+   /* line-height: 40px; */
+}
+
+.play2{
+    font-size: 1.5vw;
+    font-family: arial;
+    line-height: 5vw ;
+    letter-spacing: 2px;
+}
+
+.button{
+    background-color: orange;
+    font-family:arial;
+    border: none;
+    padding:5px 40px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 2%;
+    color:black ;
+}
+
+.button:hover{
+opacity:0.8;
+color:black ;
+}
+
+.thestory{
+    font-size: 0.6rem;
+    font-family:'open sans';
+    letter-spacing: normal;
+    position: absolute;
+    left: 47.66%;
+    right: 47.61%;
+    top: 91.03%;
+    line-height: 15px;
+}
+
+.scrolldown{
+    position: absolute;
+    left: 47.66%;
+    right: 47.61%;
+    top: 93%;
+    bottom: 6.45%;
+    line-height: 3vw;
+}
+
+
+/* page 2 */
+.page2{
+    width:100vw; height:100vh; background-image: url('../img/the-games-bg.jpg'); background-size: 100vw 100vh; background-position:center; background-attachment: local; border: none; background-repeat: no-repeat;background-attachment: local;
+}
+
+.carousel.slide{
+    float: left;
+}
+
+/* page3  */
+
+.page3{
+    width:100vw; height:100vh; background-image: url('../img/group.jpg') ; background-size: 100vw 100vh; background-attachment: local;background-position: top;padding: 150px 0;
+}
+
+.features{
+    margin-left: 50%;
+    padding: 50px 30px;
+}
+
+.features .list{
+    position: relative;
+}
+
+.features .list .items {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.features .list .items h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    margin-bottom: 15px;
+}
+
+.features .list .items::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    border: 1px solid #FFFFFF;
+    margin-top: 2px;
+}
+
+.features .list .items.active::before {
+    background: #FFFFFF;
+}
+
+.features .list .detail::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 1px;
+    height: -webkit-fill-available;
+    background: #FFFFFF;
+}
+
+.features .list .items .detail p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+
+
+/* page 4 */
+
+.page4{
+    width:100vw; height:100vh; background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url('../img/requirements.jpg'); background-size: 100vw 100vh; background-attachment: local;
+}
+
+.namasistem{
+    color: orange;
+    padding: 1vw;
+    font-family: arial;
+    letter-spacing: 1px;
+    
+}
+
+
+.ketsistem{
+    color: #FFFFFF;
+    padding-left: 1vw;
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+/* page 5 */
+
+.topscores{
+    font-family: arial;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+    top:7vw;
+    padding-bottom: 1rem;
+}
+
+.topscorestext{
+    color: white;
+    position: relative;
+    top:8vw;
+    padding-bottom: 1rem;
+    font-family: arial;
+}
+
+.seemore{
+    position: relative;
+    top:9vw;
+}
+
+.ikoncard{
+    position: relative;
+    float:right;
+}
+
+.namecard{
+    color: #FFB548;
+    position: relative;
+    left:8px;
+    padding:5px;
+}
+
+.jobcard{
+    color:white;
+    opacity: 0.5;
+    position: relative;
+    left:8px;
+
+    font-size: 10px;
+    font-family: arial;
+}
+
+.card-text{
+    color: white;
+    font-size: 15px;
+    positin:relative;
+    padding-bottom: 10px;
+}
+.card-date{
+    color: white;
+    font-size: 10px;
+}
+
+#card1{
+    float:right;
+    display: block;
+    position: relative;
+    left:2vh ;
+}
+
+#card2{
+    float:left;
+    position: relative;
+    right:25vh
+}
+
+#card3{
+    position: relative;
+    right:5vh
+}
+
+
+
+
+
+
+
+/* *page 6 */
+
+.touch{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.news{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    margin-bottom: 20px;
+}
+
+.order{
+    font-size: 18px;
+    color: white;
+    font-family: arial;
+    margin-bottom: 5px;
+}
+.navbarbawah{display: flex;
+    justify-content: space-evenly;
+    background-color:#080A0B;
+    padding: 5px 0px;
+    color: white;
+    font-family: arial;
+font-size: 10px;}
+
+.navbarbawah :hover{
+    color:orange;
+}
+
+.navbarbawah ul li a{
+    color: white;
+
+
+}.nav-item{
+
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-flickr:hover {
+    background: #f40083;
+    color: white;
+  }
+  
+  .ftbawah{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#080A0B;
+    padding: 5px 0px;
+    color: white;
+    font-family: arial;
+font-size: 8px;}
+
+
+.ftbawah ul li a:hover{
+    color:orange;
+}
+
+.ftbawah ul li a{
+    color: white;
+float: inline-end;}

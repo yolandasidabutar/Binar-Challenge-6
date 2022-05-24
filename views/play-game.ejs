@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROCK PAPER SCISSORS | BinarGame</title>
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset201101.css">
+    <link rel="shortcut icon" type="image/png" href="/img/icon.PNG">
+    <link rel="stylesheet" href="/css/style-play-game.css">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="/" class="back">&#60</a></li>
+            <li class="logo"><img src="/img/logo 1.png"></li>
+            <li class="judul">ROCK PAPER SCISSORS</li>
+        </ul>
+    </div>
+    <div class="areagame">
+        <div class="player1"> 
+            <ul>
+                <lI><p class="judulpemain">PLAYER 1</p></lI>
+                <li><img onclick="chooseplayer(this)" src="/img/batu.png" class="batu hover" data-player1="batu"></li>
+                <li><img onclick="chooseplayer(this)" src="/img/gunting.png" class="gunting hover" data-player1="gunting"></li>
+                <li><img onclick="chooseplayer(this)" src="/img/kertas.png" class="kertas hover" data-player1="kertas"></li>
+            </ul>
+        </div>
+        <div class="vs"><p>VS</p></div>
+        <div class="com">
+            <ul>
+                <li><p class="judulpemain">COM</p></li>
+                <li><img src="/img/batu.png" class="combatu"></li>
+                <li><img src="/img/gunting.png" class="comgunting"></li>
+                <li><img src="/img/kertas.png" class="comkertas"></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="row reload"><p><img src="/img/refresh.png" class="refresh"></p>
+    </div>
+       
+    <script src="/js/rps.js"></script>
+</body>
+
+</html>

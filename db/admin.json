@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "email": "begadangtidakbaik1@gmail.com",
+      "password": "asdfgh"
+    },
+    {
+      "id": 2,
+      "email": "begadangtidakbaik2@gmail.com",
+      "password": "asdfgh"
+    },
+    {
+      "id": 3,
+      "email": "begadangtidakbaik3@gmail.com",
+      "password": "zxcvbn"
+    },
+    {
+      "id": 4,
+      "email": "begadangtidakbaik4@gmail.com",
+      "password": "zxcvbn"
+    },
+    {
+      "id": 5,
+      "email": "begadangtidakbaik5@gmail.com",
+      "password": "123456"
+    }
+  ]
